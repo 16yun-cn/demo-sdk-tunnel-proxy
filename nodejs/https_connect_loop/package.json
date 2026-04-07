@@ -1,0 +1,13 @@
+{
+  "name": "nodejs-demo-tunnel-https-proxytunnel-loop",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "https-proxy-agent": "^7.0.4"
+  }
+}
+

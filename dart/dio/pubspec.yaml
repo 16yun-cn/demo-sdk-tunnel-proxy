@@ -1,0 +1,15 @@
+name: dart_dio_tunnel_demo
+description: Dart dio 隧道代理四种场景演示
+version: 1.0.0
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  dio: ^5.4.0
+
+dev_dependencies:
+  lints: ^3.0.0
+
+executables:
+  main: main

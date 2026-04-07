@@ -1,0 +1,12 @@
+{
+  "name": "tunnel-proxy-phantomjs-demo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "16YUN PhantomJS tunnel proxy demo",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "phantomjs-prebuilt": "2.1.16"
+  }
+}

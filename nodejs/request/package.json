@@ -1,0 +1,13 @@
+{
+  "name": "nodejs-demo-tunnel-request",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
+

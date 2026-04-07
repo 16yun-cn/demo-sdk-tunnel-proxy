@@ -1,0 +1,14 @@
+{
+  "name": "nodejs-demo-tunnel-superagent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "superagent": "^9.0.2",
+    "superagent-proxy": "^3.0.0"
+  }
+}
+

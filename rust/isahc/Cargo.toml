@@ -1,0 +1,18 @@
+[package]
+name = "rust-isahc-tunnel-demo"
+version = "1.0.0"
+edition = "2021"
+description = "Rust isahc 隧道代理四种场景演示"
+authors = ["16YUN"]
+license = "MIT"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[dependencies]
+isahc = { version = "1.7", features = ["text-decoding"] }  # 添加 text-decoding feature
+anyhow = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+# 移除 tokio 和 url，改用同步 API

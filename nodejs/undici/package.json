@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-undici-tunnel-demo",
+  "version": "1.0.0",
+  "description": "Node.js undici 隧道代理四种场景演示",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node main.js",
+    "test": "node main.js"
+  },
+  "dependencies": {
+    "undici": "^6.0.0",
+    "https-proxy-agent": "^7.0.0",
+    "http-proxy-agent": "^7.0.0"
+  },
+  "keywords": [
+    "proxy",
+    "tunnel",
+    "undici",
+    "16yun"
+  ],
+  "author": "16YUN",
+  "license": "MIT"
+}

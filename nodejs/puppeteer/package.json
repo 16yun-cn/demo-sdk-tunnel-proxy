@@ -1,0 +1,13 @@
+{
+  "name": "16yun-nodejs-puppeteer-demo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "dependencies": {
+    "puppeteer": "^22.13.0"
+  },
+  "scripts": {
+    "start": "node main.js"
+  }
+}
+
