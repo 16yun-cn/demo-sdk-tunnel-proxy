@@ -4,7 +4,7 @@
 
 ## 📁 目录结构
 
-- `lwp/` - Perl LWP::UserAgent实现（标准HTTP库）
+- [lwp](lwp/README.md) - Perl LWP::UserAgent实现（标准HTTP库）
 
 ## 🎯 四种场景说明
 
@@ -35,6 +35,6 @@ perl main.pl
 
 ## 📚 相关文档
 
-- [16YUN代理服务文档](https://www.16yun.cn/help/tunnel-proxy/)
+- [16YUN 爬虫代理开发手册](https://www.16yun.cn/help/dev-manual/crawler-proxy-guide/)
 - [LWP::UserAgent文档](https://metacpan.org/pod/LWP::UserAgent)
 - [Perl网络编程指南](https://perldoc.perl.org/perlnetworking)

@@ -1,6 +1,7 @@
 ## Tunnel Proxy · PHP
 
-- guzzle: `php-demo/tunnel/`
-- stream: `php-demo/tunnel_stream/`
-- curl: `php-demo/tunnel_curl/`
+- [curl](curl/README.md)
+- [guzzle](guzzle/README.md)
+- [stream](stream/README.md)
 
+[产品接入说明](../README.md)

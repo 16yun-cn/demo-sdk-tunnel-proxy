@@ -4,8 +4,8 @@
 
 ## 📁 目录结构
 
-- `dio/` - Dart dio库实现（功能丰富的HTTP客户端）
-- `http/` - Dart http包实现（官方HTTP库）
+- [dio](dio/README.md) - Dart dio库实现（功能丰富的HTTP客户端）
+- [http](http/README.md) - Dart http包实现（官方HTTP库）
 
 ## 🎯 四种场景说明
 
@@ -40,6 +40,6 @@ dart run
 
 ## 📚 相关文档
 
-- [16YUN代理服务文档](https://www.16yun.cn/help/tunnel-proxy/)
+- [16YUN 爬虫代理开发手册](https://www.16yun.cn/help/dev-manual/crawler-proxy-guide/)
 - [Dart dio文档](https://pub.dev/packages/dio)
 - [Dart http文档](https://pub.dev/packages/http)

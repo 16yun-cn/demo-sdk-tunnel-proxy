@@ -4,8 +4,8 @@
 
 ## 📁 目录结构
 
-- `urlsession/` - Swift URLSession实现（系统原生）
-- `alamofire/` - Swift Alamofire实现（第三方库）
+- [urlsession](urlsession/README.md) - Swift URLSession实现（系统原生）
+- [alamofire](alamofire/README.md) - Swift Alamofire实现（第三方库）
 
 ## 🎯 四种场景说明
 
@@ -38,6 +38,6 @@ swift run
 
 ## 📚 相关文档
 
-- [16YUN代理服务文档](https://www.16yun.cn/help/tunnel-proxy/)
+- [16YUN 爬虫代理开发手册](https://www.16yun.cn/help/dev-manual/crawler-proxy-guide/)
 - [Apple URLSession文档](https://developer.apple.com/documentation/foundation/urlsession)
 - [Alamofire官方文档](https://github.com/Alamofire/Alamofire)

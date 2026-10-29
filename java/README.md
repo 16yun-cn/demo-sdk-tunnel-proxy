@@ -1,7 +1,8 @@
 ## Tunnel Proxy · Java
 
-- okhttp: `java-demo/tunnel/`
-- httpclient4: `java-demo/tunnel_httpclient4/`
-- jsoup (HTTP): `java-demo/tunnel_jsoup/`
-- httpurlconnection: `java-demo/tunnel_httpurlconnection/`
+- [httpclient4](httpclient4/README.md)
+- [httpurlconnection](httpurlconnection/README.md)
+- [jsoup](jsoup/README.md)
+- [okhttp](okhttp/README.md)
 
+[产品接入说明](../README.md)

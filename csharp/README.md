@@ -1,5 +1,6 @@
 ## Tunnel Proxy · C#
 
-- HttpClient: `csharp-demo/tunnel/`
-- HttpWebRequest: `csharp-demo/tunnel_httpwebrequest/`
+- [httpclient](httpclient/README.md)
+- [httpwebrequest](httpwebrequest/README.md)
 
+[产品接入说明](../README.md)
