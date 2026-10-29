@@ -1,14 +1,45 @@
-# 爬虫代理（隧道代理） · Dart
+# Dart 隧道代理演示
 
-先按[产品接入说明](../README.md)取得连接信息，再选择请求库或实现。
+本目录包含了Dart语言的隧道代理实现，演示四种不同的代理使用场景。
 
-## 示例目录
+## 📁 目录结构
 
-- [dio](dio/README.md)（暂无源码）
-- [http](http/README.md)（暂无源码）
+- `dio/` - Dart dio库实现（功能丰富的HTTP客户端）
+- `http/` - Dart http包实现（官方HTTP库）
 
-各实现对 HTTPS CONNECT 自定义头的支持不同，使用 `Proxy-Tunnel` 前请查看具体示例的说明；会话保持受代理有效期和连接复用影响。
+## 🎯 四种场景说明
 
-## 官方帮助
+每个实现都包含以下四种场景：
 
-[帮助首页](https://www.16yun.cn/help/) · [首次接入](https://www.16yun.cn/help/quickstart/crawler-extract/) · [开发手册](https://www.16yun.cn/help/dev-manual/crawler-proxy-guide/) · [开发 FAQ](https://www.16yun.cn/help/dev-manual/crawler-proxy-faq/) · [代码示例与 SDK](https://www.16yun.cn/help/code-sdk/crawler-proxy/) · [错误码说明](https://www.16yun.cn/help/dev-manual/errcode/)
+1. **场景A：强制新建连接** - 每次请求获得不同IP
+2. **场景B：Keep-Alive会话保持** - 保持相同IP
+3. **场景C-HTTP：Proxy-Tunnel固定IP（HTTP目标）** - 固定IP访问HTTP
+4. **场景C-HTTPS：Proxy-Tunnel固定IP（HTTPS目标）** - 固定IP访问HTTPS
+
+## ⚠️ HTTPS Proxy-Tunnel支持
+
+Dart实现对HTTPS Proxy-Tunnel的支持情况：
+- **dio**: ⚠️ 需要验证 - 基于HttpClient
+- **http**: ⚠️ 需要验证 - 标准库限制
+
+建议：如需确保HTTPS Proxy-Tunnel支持，请使用Go、Python或Node.js。
+
+## 🚀 快速开始
+
+```bash
+# dio实现
+cd dio
+dart pub get
+dart run
+
+# http实现
+cd http  
+dart pub get
+dart run
+```
+
+## 📚 相关文档
+
+- [16YUN代理服务文档](https://www.16yun.cn/help/tunnel-proxy/)
+- [Dart dio文档](https://pub.dev/packages/dio)
+- [Dart http文档](https://pub.dev/packages/http)

@@ -1,9 +1,34 @@
 # Dart http 隧道代理示例
 
-当前目录仅保留项目配置，尚无可运行示例源码。暂不提供构建或运行命令，也不声明已实现的代理能力。
+演示使用 http 通过代理访问 HTTP 站点。
 
-请先阅读[产品接入说明](../../README.md)，从其中的示例索引选择已有源码的实现。
+## 功能特性
+- 场景A：强制IP切换 - 每次请求不同IP
+- 场景B：会话保持 - 复用连接保持IP
+- 场景C-HTTP：Proxy-Tunnel固定IP
+- HTTPS: ❌ 不支持
 
-## 官方帮助
+## 环境要求
+- Dart 环境
+- 依赖库: http (见代码目录)
 
-[帮助首页](https://www.16yun.cn/help/) · [首次接入](https://www.16yun.cn/help/quickstart/crawler-extract/) · [开发手册](https://www.16yun.cn/help/dev-manual/crawler-proxy-guide/) · [开发 FAQ](https://www.16yun.cn/help/dev-manual/crawler-proxy-faq/) · [代码示例与 SDK](https://www.16yun.cn/help/code-sdk/crawler-proxy/) · [错误码说明](https://www.16yun.cn/help/dev-manual/errcode/)
+## 环境变量配置
+| 变量名 | 默认值 | 说明 |
+|---|---|---|
+| PROXY_HOST | t.16yun.cn | 代理地址 |
+| PROXY_PORT | 31111 | 代理端口 |
+| PROXY_USER | user | 用户名 |
+| PROXY_PASSWORD | password | 密码 |
+| TARGET_URL | http://httpbin.org/ip | 目标URL |
+
+## 运行方式
+```bash
+# 1. 进入目录
+cd tunnel-proxy/dart/http
+
+# 2. 安装依赖 (视语言而定)
+# pub get
+
+# 3. 运行代码
+dart bin/main.dart
+```

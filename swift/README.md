@@ -1,14 +1,43 @@
-# 爬虫代理（隧道代理） · Swift
+# Swift 隧道代理演示
 
-先按[产品接入说明](../README.md)取得连接信息，再选择请求库或实现。
+本目录包含了Swift语言的隧道代理实现，演示四种不同的代理使用场景。
 
-## 示例目录
+## 📁 目录结构
 
-- [alamofire](alamofire/README.md)
-- [urlsession](urlsession/README.md)
+- `urlsession/` - Swift URLSession实现（系统原生）
+- `alamofire/` - Swift Alamofire实现（第三方库）
 
-各实现对 HTTPS CONNECT 自定义头的支持不同，使用 `Proxy-Tunnel` 前请查看具体示例的说明；会话保持受代理有效期和连接复用影响。
+## 🎯 四种场景说明
 
-## 官方帮助
+每个实现都包含以下四种场景：
 
-[帮助首页](https://www.16yun.cn/help/) · [首次接入](https://www.16yun.cn/help/quickstart/crawler-extract/) · [开发手册](https://www.16yun.cn/help/dev-manual/crawler-proxy-guide/) · [开发 FAQ](https://www.16yun.cn/help/dev-manual/crawler-proxy-faq/) · [代码示例与 SDK](https://www.16yun.cn/help/code-sdk/crawler-proxy/) · [错误码说明](https://www.16yun.cn/help/dev-manual/errcode/)
+1. **场景A：强制新建连接** - 每次请求获得不同IP
+2. **场景B：Keep-Alive会话保持** - 保持相同IP
+3. **场景C-HTTP：Proxy-Tunnel固定IP（HTTP目标）** - 固定IP访问HTTP
+4. **场景C-HTTPS：Proxy-Tunnel固定IP（HTTPS目标）** - 固定IP访问HTTPS
+
+## ⚠️ HTTPS Proxy-Tunnel支持
+
+Swift实现对HTTPS Proxy-Tunnel的支持情况：
+- **URLSession**: ⚠️ 需要验证 - 系统级网络栈限制
+- **Alamofire**: ⚠️ 需要验证 - 基于URLSession
+
+建议：如需确保HTTPS Proxy-Tunnel支持，请使用Go、Python或Node.js。
+
+## 🚀 快速开始
+
+```bash
+# URLSession实现
+cd urlsession
+swift run
+
+# Alamofire实现  
+cd alamofire
+swift run
+```
+
+## 📚 相关文档
+
+- [16YUN代理服务文档](https://www.16yun.cn/help/tunnel-proxy/)
+- [Apple URLSession文档](https://developer.apple.com/documentation/foundation/urlsession)
+- [Alamofire官方文档](https://github.com/Alamofire/Alamofire)
