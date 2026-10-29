@@ -27,6 +27,7 @@
   </dependencies>
 
   <build>
+    <sourceDirectory>src/main/kotlin</sourceDirectory>
     <plugins>
       <plugin>
         <groupId>org.jetbrains.kotlin</groupId>
@@ -35,19 +36,12 @@
         <executions>
           <execution>
             <id>compile</id>
-            <phase>compile</phase>
             <goals>
               <goal>compile</goal>
             </goals>
-            <configuration>
-              <sourceDirs>
-                <sourceDir>${project.basedir}/src/main/kotlin</sourceDir>
-              </sourceDirs>
-            </configuration>
           </execution>
           <execution>
             <id>test-compile</id>
-            <phase>test-compile</phase>
             <goals>
               <goal>test-compile</goal>
             </goals>
@@ -68,6 +62,7 @@
               <goal>shade</goal>
             </goals>
             <configuration>
+              <createDependencyReducedPom>false</createDependencyReducedPom>
               <transformers>
                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                   <mainClass>MainKt</mainClass>
@@ -80,3 +75,4 @@
     </plugins>
   </build>
 </project>
+

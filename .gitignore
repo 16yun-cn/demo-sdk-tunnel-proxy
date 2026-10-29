@@ -13,3 +13,5 @@ out/
 obj/
 .build/
 .swiftpm/
+
+.dart_tool/
