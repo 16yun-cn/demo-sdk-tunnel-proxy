@@ -1,15 +1,24 @@
-## Tunnel Proxy · Python
+# 爬虫代理（隧道代理） · Python
 
-- requests: `python-demo/tunnel_requests/`
-- requests_connect_adapter: `python-demo/tunnel_requests_connect_adapter/`
-- httpx: `python-demo/tunnel_httpx/`
-- aiohttp: `python-demo/tunnel_aiohttp/`
-- urllib: `python-demo/tunnel_urllib/`
-- scrapy: `python-demo/tunnel_scrapy/`
-- scrapy_splash: `python-demo/tunnel_scrapy_splash/`
-- pyppeteer: `python-demo/tunnel_pyppeteer/`
-- selenium_chrome: `python-demo/tunnel_selenium_chrome_auth/`
-- selenium_firefox: `python-demo/tunnel_selenium_firefox_auth/`
-- feapder: `python-demo/tunnel_feapder/`
-- mitmproxy (tool): `python-demo/mitmproxy/`
+先按[产品接入说明](../README.md)取得连接信息，再选择请求库或实现。
 
+## 示例目录
+
+- [aiohttp](aiohttp/README.md)
+- [feapder](feapder/README.md)
+- [httpx](httpx/README.md)
+- [mitmproxy](mitmproxy/README.md)
+- [pyppeteer](pyppeteer/README.md)
+- [requests](requests/README.md)
+- [requests_connect_adapter](requests_connect_adapter/README.md)
+- [scrapy](scrapy/README.md)
+- [scrapy_splash](scrapy_splash/README.md)
+- [selenium_chrome](selenium_chrome/README.md)
+- [selenium_firefox](selenium_firefox/README.md)
+- [urllib](urllib/README.md)
+
+各实现对 HTTPS CONNECT 自定义头的支持不同，使用 `Proxy-Tunnel` 前请查看具体示例的说明；会话保持受代理有效期和连接复用影响。
+
+## 官方帮助
+
+[帮助首页](https://www.16yun.cn/help/) · [首次接入](https://www.16yun.cn/help/quickstart/crawler-extract/) · [开发手册](https://www.16yun.cn/help/dev-manual/crawler-proxy-guide/) · [开发 FAQ](https://www.16yun.cn/help/dev-manual/crawler-proxy-faq/) · [代码示例与 SDK](https://www.16yun.cn/help/code-sdk/crawler-proxy/) · [错误码说明](https://www.16yun.cn/help/dev-manual/errcode/)

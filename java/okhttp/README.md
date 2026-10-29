@@ -1,35 +1,9 @@
 # Java okhttp 隧道代理示例
 
-演示使用 okhttp 通过代理访问 HTTP/HTTPS 站点。
+当前目录仅保留项目配置，尚无可运行示例源码。暂不提供构建或运行命令，也不声明已实现的代理能力。
 
-## 功能特性
-- 场景A：强制IP切换 - 每次请求不同IP
-- 场景B：会话保持 - 复用连接保持IP
-- 场景C：Proxy-Tunnel固定IP
-  - HTTP: ✅ 支持
-  - HTTPS: ❌ 不支持 (库限制)
+请先阅读[产品接入说明](../../README.md)，从其中的示例索引选择已有源码的实现。
 
-## 环境要求
-- Java 环境
-- 依赖库: okhttp (见代码目录)
+## 官方帮助
 
-## 环境变量配置
-| 变量名 | 默认值 | 说明 |
-|---|---|---|
-| PROXY_HOST | t.16yun.cn | 代理地址 |
-| PROXY_PORT | 31111 | 代理端口 |
-| PROXY_USER | user | 用户名 |
-| PROXY_PASSWORD | password | 密码 |
-| TARGET_URL | https://httpbin.org/ip | 目标URL |
-
-## 运行方式
-```bash
-# 1. 进入目录
-cd tunnel-proxy/java/okhttp
-
-# 2. 安装依赖 (视语言而定)
-# mvn install
-
-# 3. 运行代码
-mvn clean package && java -jar target/*.jar
-```
+[帮助首页](https://www.16yun.cn/help/) · [首次接入](https://www.16yun.cn/help/quickstart/crawler-extract/) · [开发手册](https://www.16yun.cn/help/dev-manual/crawler-proxy-guide/) · [开发 FAQ](https://www.16yun.cn/help/dev-manual/crawler-proxy-faq/) · [代码示例与 SDK](https://www.16yun.cn/help/code-sdk/crawler-proxy/) · [错误码说明](https://www.16yun.cn/help/dev-manual/errcode/)
